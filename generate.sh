@@ -3,10 +3,14 @@
 # Copyright (c) 2025, Oracle and/or its affiliates.
 # Licensed under the Universal Permissive License v 1.0 as shown at https://oss.oracle.com/licenses/upl.
 
+log() {
+	echo "$@" 1>&2
+}
+
 CATALOG=$(ocne catalog search --name embedded | sed 1d | tr '\t' ' ' | tr -s ' ' | awk '{$1=$1};1' | tr ' ' ':')
 COMPONENTS=$(echo "$CATALOG" | cut -d':' -f1 | sort | uniq)
 
-KUBE_VERSION="1.30 1.31"
+KUBE_VERSION="1.32 1.31 1.30"
 echo "os:"
 echo "  ock:"
 for kubeVer in $KUBE_VERSION; do
@@ -48,6 +52,8 @@ for kubeVer in $KUBE_VERSION; do
 	done
 done
 
+# Expand the Kubernetes versions for a more complete catalog
+KUBE_VERSION="$KUBE_VERSION 1.29 1.28 1.27 1.26"
 
 echo "catalog:"
 for component in $COMPONENTS; do
@@ -55,17 +61,30 @@ for component in $COMPONENTS; do
 	VERSIONS=$(echo "$CATALOG" | grep "^${component}:" | cut -d: -f2 | sort -V -r | uniq)
 	for version in $VERSIONS; do
 		echo "  - version: ${version}"
-		echo "    images:"
 
-		IMAGES=$(ocne catalog mirror --config <(cat << EOF
+		echo "    kubernetes:"
+		IMAGES=
+		for kubeVer in $KUBE_VERSION; do
+			log "Looking at $component at $version for Kubernetes $kubeVer"
+			THESE_IMAGES=$(ocne catalog mirror --config <(cat << EOF
+kubernetesVersion: $kubeVer
 applications:
 - name: $component
   version: $version
   catalog: embedded
 EOF
 ))
+			if [ "$?" = "0" ]; then
+				echo "      - $kubeVer"
+			fi
+			log "  found $THESE_IMAGES"
+			IMAGES=$(echo "${IMAGES}${THESE_IMAGES} ")
+		done
+		echo "    images:"
+		IMAGES=$(echo "$IMAGES" | tr ' ' '\n' | sort | uniq)
 		for image in $IMAGES; do
 			IMG=$(skopeo inspect docker://$image)
+
 			echo "    - image: \"$image\""
 			echo "      sha: $(echo "$IMG" | jq '.Digest')"
 		done
