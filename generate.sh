@@ -10,7 +10,7 @@ log() {
 CATALOG=$(ocne catalog search --name embedded | sed 1d | tr '\t' ' ' | tr -s ' ' | awk '{$1=$1};1' | tr ' ' ':')
 COMPONENTS=$(echo "$CATALOG" | cut -d':' -f1 | sort | uniq)
 
-KUBE_VERSION="1.32 1.31 1.30"
+KUBE_VERSION="1.33 1.32 1.31 1.30"
 echo "os:"
 echo "  ock:"
 for kubeVer in $KUBE_VERSION; do
