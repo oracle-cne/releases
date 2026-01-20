@@ -3,9 +3,9 @@ os:
   - version: 1.33
     images:
     - image: container-registry.oracle.com/olcne/ock:1.33
-      sha: "sha256:88c27bd61047aa11821b41515100a7afde4a14a893553f219736704f66e98670"
+      sha: "sha256:7afcaba4e6d4501b4197daac237320fdb452602fa57318570ed9e4e3a876127d"
     - image: container-registry.oracle.com/olcne/ock-ostree:1.33
-      sha: "sha256:5d64d8b356c6215ac4eb40662a6dbd9a42bc61fa60047f4a7b151795bc26c456"
+      sha: "sha256:87e7a08ddafd7b59e0ce9cc23be990307540935c6f1dd7a9a238026725bcf4b3"
     rpms:
     - name: acl
       version: 2.2.53-3.el8
@@ -65,29 +65,29 @@ os:
       version: 0.33-3.el8
       hash: 179d6e28df944723ec933c043bf62162eeb688ae
     - name: conmon
-      version: 2.1.10-1.module+el8.10.0+90704+e5ea1250
-      hash: 6da970712a63815ca954d2e3f6e985b26180d715
+      version: 2.1.10-1.module+el8.10.0+90756+b6fd2933
+      hash: 2ffd7bfb1e74fc74b285c45049f41b51aed14918
     - name: conntrack-tools
       version: 1.4.4-11.el8
       hash: f449880d4254666c8db73c6355eff14f2687f4d6
     - name: containernetworking-cni
-      version: 1.3.0-1.el8
-      hash: 0b777f3cf78a82507da31cc4aebae7466fa01537
+      version: 1.3.0-2.el8
+      hash: 185e1bd0027fb87a8fd3c4303dc212421f9d4d98
     - name: containernetworking-plugins
       version: 1.9.0-1.el8
       hash: aa666a78d224f584e5ce08f451eb662058d43e67
     - name: containers-common
-      version: 1-82.0.1.module+el8.10.0+90704+e5ea1250
-      hash: a295cd8e300af9b326d56789dae195878752dedd
+      version: 1-82.0.1.module+el8.10.0+90756+b6fd2933
+      hash: a2b716ae0219c66fc09571b92412e976453b4f5c
     - name: container-selinux
-      version: 2.229.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 40c3e7d6222d2220826abed419568e60f85f4604
+      version: 2.229.0-2.module+el8.10.0+90756+b6fd2933
+      hash: a26beb80fae8bc195c7d40f501aea570eed47c56
     - name: coreutils
-      version: 8.30-15.0.1.el8
-      hash: 102f3929c6f47b9f4a525af70f1786dff55cf860
+      version: 8.30-16.0.1.el8_10
+      hash: 6fca7240f027057c9de10765549719ce1da1aa15
     - name: coreutils-common
-      version: 8.30-15.0.1.el8
-      hash: e008db9e0a21d52b6fcd6d92b245e4d9e78e5c9b
+      version: 8.30-16.0.1.el8_10
+      hash: 659ca83108bbb582713b2bb4ac410bc8db5c0642
     - name: cpio
       version: 2.12-11.el8
       hash: aacdaabc96225772435ee869a68b895fdbd68d3e
@@ -104,8 +104,8 @@ os:
       version: 1.33.0-1.el8
       hash: dae70d12efd887e02b1a00903d348491e453a4b8
     - name: criu
-      version: 3.18-5.module+el8.10.0+90704+e5ea1250
-      hash: 89a0e08f5dba03fbafb2ccbfe3525d73e45e6699
+      version: 3.18-5.module+el8.10.0+90756+b6fd2933
+      hash: 1394add8fbd1a49b96587c42a94473fb303079b1
     - name: crypto-policies
       version: 20230731-1.git3177e06.el8
       hash: 040329ad382ec2fbadc0cbf95d0ad6c4ab78233c
@@ -116,8 +116,8 @@ os:
       version: 2.3.7-7.el8
       hash: 7ef15bc53560b4e1964013ebce170778eaf05cfa
     - name: curl
-      version: 7.61.1-34.el8_10.8
-      hash: e78ed1dc7bae0b2f9d55d36b36b1688139bcb05e
+      version: 7.61.1-34.el8_10.9
+      hash: 402ac8f715c0b231f3a73e39010ad4d2ce374f66
     - name: cyrus-sasl-lib
       version: 2.1.27-6.el8_5
       hash: bff5133a48a1a70fda2ec757a382ec234fe675f2
@@ -167,11 +167,11 @@ os:
       version: 4.1-6.el8
       hash: 4f486d014dfec13cec583225dc3df287dd19ce21
     - name: dracut
-      version: 049-237.git20250603.0.1.el8_10
-      hash: eb86b553fb0d79dc4238bca2553603c602e65ec8
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 8973d93a8c74944345543ba2acf19f2928917747
     - name: dracut-network
-      version: 049-237.git20250603.0.1.el8_10
-      hash: ded16d481ca932131e4d328cf01526cb95ff3f92
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 07dd789df5f0c83374fcdacbd58485f413bce82c
     - name: e2fsprogs
       version: 1.46.2-2.el8
       hash: 1ca3d172548d4214fca07398d1920a0ef0aaea12
@@ -218,8 +218,8 @@ os:
       version: 3.8-6.el8
       hash: 8b9d6e94a49c828a7cc62110e23e8387b0d3bb48
     - name: findutils
-      version: 4.6.0-23.el8_10
-      hash: 1e24310943b414a0903b4869e81bbd81737814e0
+      version: 4.6.0-24.el8_10
+      hash: 2205950ceb70c1fd5dd39bc43f4783b264d38890
     - name: flannel-cni-plugin
       version: 1.9.0-1.el8
       hash: fa76fe1469ddc6727be146fd72c8052e77955af9
@@ -245,8 +245,8 @@ os:
       version: 2.9.7-19.0.1.el8
       hash: e0852225d5ae346b65c27219fb6f4bbf8454f102
     - name: fuse-overlayfs
-      version: 1.13-1.module+el8.10.0+90704+e5ea1250
-      hash: a056ba793efcb9e607c2cd0f8ceede732938b5d8
+      version: 1.13-1.module+el8.10.0+90756+b6fd2933
+      hash: 8db12c3f71d7d91d1fac87e567348f3ecee58548
     - name: fwupd
       version: 1.7.8-2.0.1.el8
       hash: 99a7b567db105146b8f7f7ee016e884c6a5a5eed
@@ -395,11 +395,11 @@ os:
       version: 1.9.2-1.el8
       hash: 3dbbd0695f014615e313bcfa4cf42841cd064bb9
     - name: iscsi-initiator-utils
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: 4b0561082767b921d9566624246a0e083b5030e5
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 3a49bc8185daec206265ea34f00a8c8c08e7c747
     - name: iscsi-initiator-utils-iscsiuio
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: ff55508fcaacc826093768cf1e028851dc66ed2e
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 2b4b5359d938a45f4dda8e76fa2634829d3d0bd0
     - name: isns-utils-libs
       version: 0.99-1.el8
       hash: 9f9acb12c03568a312b8dd370858e91b23eaeb01
@@ -431,14 +431,14 @@ os:
       version: 2.1.5-11.el8_10
       hash: 5400aeaf1e576e9fb06198645bbc6f553fb74d67
     - name: kernel-uek-container
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: b285d321b8f8aed0bb6759943e4a73c30920f5e0
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 3e8503a4108d8fc250a4ab4417bb4dd31e231990
     - name: kernel-uek-core
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: d9d9ab0c81f326c184114f4696d86f2de40ad098
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 19b6d59361cf1843db49ef12073ea118c9cc993d
     - name: kernel-uek-modules
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: fb444f21f0517edd1b5279f67a2f07f555b8ca79
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: ee4445ad0b73f1c4f292752435fb123518aace46
     - name: keyutils
       version: 1.5.10-9.0.1.el8
       hash: 2ee69624fc08a8d724049b6520050d5b4b2ab5af
@@ -494,8 +494,8 @@ os:
       version: 0.1.1-40.el8
       hash: d0ad8197e560bf84e90e970b42e3d07415e686f8
     - name: libblkid
-      version: 2.32.1-46.0.1.el8
-      hash: d664f78c5e772b3a09ae9ead566b0824966f009a
+      version: 2.32.1-47.0.1.el8_10
+      hash: b7d813bc3ababed0a93d0eb3942fb71a85125481
     - name: libblockdev
       version: 2.28-7.0.1.el8_10
       hash: eec4eba51db88b673b834bebfd87f23f45d8582d
@@ -542,8 +542,8 @@ os:
       version: 0.6.12-4.el8_2.1
       hash: d97c04798cd504df6acbe28f1ced1b19c6231616
     - name: libcurl
-      version: 7.61.1-34.el8_10.8
-      hash: 384483ee77121105c4e7e71ff88018045931db3d
+      version: 7.61.1-34.el8_10.9
+      hash: c8401f0d40b0830411ebf9945ae350c41483d9f4
     - name: libdb
       version: 5.3.28-42.0.1.el8_4
       hash: 93d98ec64ffb968a5d16e8d902b4541ec394be28
@@ -560,8 +560,8 @@ os:
       version: 2.1.8-5.el8
       hash: c4ade184aa910e3c8bbecc1bdf0789ce7cdc4537
     - name: libfdisk
-      version: 2.32.1-46.0.1.el8
-      hash: 2ea6a079326347fa81b3bdaede423325fd1c25d8
+      version: 2.32.1-47.0.1.el8_10
+      hash: 2615d596107cf1446c2edbc2c94bf908a89e9244
     - name: libfdt
       version: 1.6.0-1.el8
       hash: 9eb386e4c0dd37dd4efd7cc35e6f6f26be945d26
@@ -620,8 +620,8 @@ os:
       version: 2.13.0-1.el8
       hash: 6a464eb0e300d43eae3248f59ab046ff65bd8ebc
     - name: libmount
-      version: 2.32.1-46.0.1.el8
-      hash: f9778b81fce245a6e4e6656f06cf9341ffe44260
+      version: 2.32.1-47.0.1.el8_10
+      hash: 03fdcd205ab13525a40aa4c6d68f26ee79a340d8
     - name: libndp
       version: 1.7-7.el8_10
       hash: 50d01548c587bfcded90ef1bd0c3e2c2e1b29fce
@@ -668,8 +668,8 @@ os:
       version: 1.6.1-1.el8
       hash: 1f31c845c59e0098b2619726ba4758c87acd4582
     - name: libpng
-      version: 1.6.34-5.el8
-      hash: 69b136deae35c2d67d2f5db3b6f01f47f9d01fd9
+      version: 1.6.34-9.el8_10
+      hash: 57b01a5c3a1efe21dcee7073ea54cd5be0a341c3
     - name: libpsl
       version: 0.20.2-6.el8
       hash: d12803cf25aa3dfa33e4a17277075ee6fbc5c952
@@ -719,11 +719,11 @@ os:
       version: 2.11-5.el8
       hash: 7abfe541f9bcc93d10d9a38212643c69e6b8091c
     - name: libslirp
-      version: 4.4.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 7676baded6355fd56122282a12c8ed9d2d9744f3
+      version: 4.4.0-2.module+el8.10.0+90756+b6fd2933
+      hash: b17a1a8cda0962f1ec9eaca1f892b0045cb4cad5
     - name: libsmartcols
-      version: 2.32.1-46.0.1.el8
-      hash: 81721c0268490176e9f400cbdadf7ead85defac1
+      version: 2.32.1-47.0.1.el8_10
+      hash: 380261158b9082c052c9a704ef1b12b48c951c9e
     - name: libsmbios
       version: 2.4.1-2.el8
       hash: 72e44867fb03da9d639ac7ed6c448c01217111ff
@@ -764,8 +764,8 @@ os:
       version: 1.1.6-14.el8
       hash: 60e6ee9336839a89ae7500f6deb1b089aab57398
     - name: libuuid
-      version: 2.32.1-46.0.1.el8
-      hash: 2f7a5f1102ba0a650b9e91acbdab9a0d52228594
+      version: 2.32.1-47.0.1.el8_10
+      hash: a8dbbd660ff0969b046f53961662a225473af799
     - name: libverto
       version: 0.3.2-2.el8
       hash: a2934c777a7b907c2d14c935c67a0052377a6a99
@@ -851,11 +851,11 @@ os:
       version: 6.1-10.20180224.el8
       hash: 2ea59bcd42754bda24f0af14e7b6a4bb1646a62a
     - name: net-snmp-agent-libs
-      version: 5.8-31.0.1.el8_10
-      hash: 0e9a66ded20c1955d1f587cb192f2639b1e07261
+      version: 5.8-32.0.1.el8_10
+      hash: f6e5fa3081262ece7f1281faaf1369681c7fdd05
     - name: net-snmp-libs
-      version: 5.8-31.0.1.el8_10
-      hash: a2218a198ea590fd378a55760df0053d964d297b
+      version: 5.8-32.0.1.el8_10
+      hash: ba9da51b5442df83fd45807aaac77c8581fa16cd
     - name: nettle
       version: 3.4.1-7.el8
       hash: 93dae1e6b253287e9669cf5e24d9a4268847ad36
@@ -920,20 +920,20 @@ os:
       version: 2.4.46-21.el8_10
       hash: 009bcb3f60e76ec3478f2417ffcf19bec3844d29
     - name: openssh
-      version: 8.0p1-26.0.1.el8_10
-      hash: 28ac98bdde62644cf8880dbbcd14420095febb70
+      version: 8.0p1-27.0.1.el8_10
+      hash: bda6a580ead171d344d1cb56cbb3ce8d912e1558
     - name: openssh-clients
-      version: 8.0p1-26.0.1.el8_10
-      hash: 10e307688de6508f884a925bea282c779e317284
+      version: 8.0p1-27.0.1.el8_10
+      hash: f9d907a65ce41399217334b599e9a728e5c23a1e
     - name: openssh-server
-      version: 8.0p1-26.0.1.el8_10
-      hash: 77a885740b836baed1560493c582e4b8b63b0f26
+      version: 8.0p1-27.0.1.el8_10
+      hash: 038a7db0e748eedca0b7242ed798b2a2c8007f1d
     - name: openssl
-      version: 1.1.1k-14.el8_6
-      hash: 20cd3532d72908821a2aae7bfca631039ddc563a
+      version: 1.1.1k-14.el8_10
+      hash: 536aa66beda6496339f3ce2389daee62ef425283
     - name: openssl-libs
-      version: 1.1.1k-14.el8_6
-      hash: 4f627f066a74e71966ffcb3d60bd1bfe1cd1eb12
+      version: 1.1.1k-14.el8_10
+      hash: d4dffb0c2dc31a64f161c12150848542c05f234f
     - name: openssl-pkcs11
       version: 0.4.10-3.el8
       hash: 06b546533bebb603a7bf88633880658d63f77583
@@ -956,8 +956,8 @@ os:
       version: 0.23.22-2.el8
       hash: ec2fc66cedd554652a8ac0c90cbed1f052b91095
     - name: pam
-      version: 1.3.1-38.0.1.el8_10
-      hash: bb93fd3b7d850f204b5de71adc9cdac78f2299f3
+      version: 1.3.1-39.0.1.el8_10
+      hash: 8862890235a702348ff0ee87f737db266a5c588a
     - name: parted
       version: 3.2-39.0.2.el8
       hash: 6231c23cc7a7fa439d8321f6b3b88d762868019d
@@ -1112,17 +1112,17 @@ os:
       version: 39.2.0-9.el8_10
       hash: c3823c1bd15423897ab90d349347ce7c82cffd55
     - name: podman
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: cfd0602826b674c18c4c075bef84021bf7d385f1
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: b6333e653ec122b5bf80c6e95bc2c4b246b7a421
     - name: podman-catatonit
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 670c199b3de3e80cc51328c7cb1efd0fc4936058
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 79d39af61785d5f33ae650dbc39435cceb2b54e0
     - name: podman-gvproxy
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 7c149d712e3ab14f858582b11919647ae9721603
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: ebeb780478db1d580555555c11ed91aa40c7e27b
     - name: podman-plugins
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 723242b3394f2c6e91cbfadfcfbe31b0c4141c08
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 2467c95c1f89c8d7500017094c465349974c866e
     - name: policycoreutils
       version: 2.9-26.0.1.el8_10
       hash: 68ca7657a1392b41573f4392fe2576c089e8022a
@@ -1262,8 +1262,8 @@ os:
       version: 4.14.3-32.0.1.el8_10
       hash: c1bb1eeeb6d549e0c2a30b1a8ad3e45d494a4fef
     - name: runc
-      version: 1.2.5-2.module+el8.10.0+90704+e5ea1250
-      hash: 308c8c5b1c24575f9926f788acc5a6b42ff5fdf3
+      version: 1.2.9-2.module+el8.10.0+90756+b6fd2933
+      hash: 67e363b99bf85755be4336303482099c162c5e70
     - name: seabios-bin
       version: 1.16.0-4.module+el8.10.0+90665+904479bd
       hash: 49235065e7c72b78b495aa2e8fb2b13f57c999fe
@@ -1286,11 +1286,11 @@ os:
       version: 0.20170427git-3.module+el8.10.0+90665+904479bd
       hash: 4888561850eaecf73b62c0bbe81cc3cab6066913
     - name: shadow-utils
-      version: 4.6-22.el8
-      hash: 568ff4fe47b1a65d25cc8c912c46b98fea1da7d1
+      version: 4.6-23.el8_10
+      hash: e61db07ab1db39b8549d9f581829b65194769d7e
     - name: shadow-utils-subid
-      version: 4.6-22.el8
-      hash: b61d3913a565f0892946ef6b7aad7ffeb15b3f25
+      version: 4.6-23.el8_10
+      hash: 0b74d2de1f032c5338d77cbdad8e5755ea79f6da
     - name: shared-mime-info
       version: 1.9-4.el8
       hash: 4c5005e91369f0691c72c3ce098fe69955f1c7ae
@@ -1298,11 +1298,11 @@ os:
       version: 15.8-4.0.3.el8_10
       hash: 5574f83134b24ab4635feb961bdc26ca99beb1b8
     - name: skopeo
-      version: 1.14.5-4.module+el8.10.0+90704+e5ea1250
-      hash: 65d9de317c17b7c5024c37c0c761e65ca5859bfd
+      version: 1.14.5-5.module+el8.10.0+90756+b6fd2933
+      hash: 6feb0cb2975fed4184d018d0bcf8290c6e0d9b26
     - name: slirp4netns
-      version: 1.2.3-1.module+el8.10.0+90704+e5ea1250
-      hash: f61af965552c9b8eb9b26ef20d84969531f5a0ba
+      version: 1.2.3-1.module+el8.10.0+90756+b6fd2933
+      hash: 081a285d4288f306dcbbaca69bc6da80f97d0b05
     - name: snappy
       version: 1.1.8-3.el8
       hash: 0b7eb0df322e1ed39a631a57265b4a37c7be0c00
@@ -1313,23 +1313,23 @@ os:
       version: 3.26.0-20.el8_10
       hash: 39c9e11b5605c2db65d02234ab50a23b12904f30
     - name: sudo
-      version: 1.9.5p2-1.0.1.el8_10.2
-      hash: 1ffcf56ddbaa5b230189d322dcc42c580a70a8dc
+      version: 1.9.5p2-1.0.1.el8_10.3
+      hash: 64dd42e30d42f649f60fe18dd76c2d53b1e60bfb
     - name: systemd
-      version: 239-82.0.7.el8_10.8
-      hash: 3146165125b7848c5913ceb15e33eea08425c998
+      version: 239-82.0.8.el8_10.8
+      hash: 5ec6d58b76bfa051a33059684a5fa884d8e6dbc9
     - name: systemd-container
-      version: 239-82.0.7.el8_10.8
-      hash: 909567e3a3f1e66f8c97d74a7cb0e39ae1251a97
+      version: 239-82.0.8.el8_10.8
+      hash: 8d57dcaad50c5bc1ac3196ba5b14998c194ca27f
     - name: systemd-libs
-      version: 239-82.0.7.el8_10.8
-      hash: 595b226446f332f3a1369fe2a86f98b2e8bf38cb
+      version: 239-82.0.8.el8_10.8
+      hash: a283ef4cd990995a1138b7b2326a8b13bca358b6
     - name: systemd-pam
-      version: 239-82.0.7.el8_10.8
-      hash: 66ee7967e635855aa7aa59d678eef6062e94d7f7
+      version: 239-82.0.8.el8_10.8
+      hash: 0ac40627914b1d5b45a09ff343c12440362608c9
     - name: systemd-udev
-      version: 239-82.0.7.el8_10.8
-      hash: 1971e3889d039bff8baffc3e2a2ed337589e5259
+      version: 239-82.0.8.el8_10.8
+      hash: cc6bb997a2e3654aa46af0706618911422eadce8
     - name: tar
       version: 1.30-11.el8_10
       hash: 4456ddfc8b5ad0e02fd071689bd46f7a0051e8a4
@@ -1346,8 +1346,8 @@ os:
       version: 0.3.15-2.el8
       hash: 178478462a1ced9ef90beb443d9688ee4176fd6c
     - name: tzdata
-      version: 2025b-1.0.1.el8
-      hash: 02e72e74654bde97ca92508045f21be483da0fea
+      version: 2025c-1.0.1.el8
+      hash: 0f26f3f34c8e8a7b36309d5f69de37438e27ddb5
     - name: udisks2
       version: 2.9.0-16.el8_10.1
       hash: baf7b91879596382c7001064fbefe6d9d56d9873
@@ -1355,8 +1355,8 @@ os:
       version: 0.10.1-4.el8
       hash: 2e9f21960fb47cf9a0dcc099c1a31118e65dc966
     - name: util-linux
-      version: 2.32.1-46.0.1.el8
-      hash: b6d3fb0410729c31feb01a7945b507a6a7605e20
+      version: 2.32.1-47.0.1.el8_10
+      hash: 76021615e0a10f8f45a6bba07f338f665ea2dd4d
     - name: vim-minimal
       version: 8.0.1763-21.0.1.el8_10
       hash: 4e59136e2a7429ce4a97373be02bc42da1520e15
@@ -1390,9 +1390,9 @@ os:
   - version: 1.32
     images:
     - image: container-registry.oracle.com/olcne/ock:1.32
-      sha: "sha256:6dcdcf68ef34a92b1f304174f4a5c194dca9d733ee4b7e164126ac239f31788c"
+      sha: "sha256:805ae94079cc5ed440ee0e3e67339f3a26ad3f45c36696d503891e64c393c89f"
     - image: container-registry.oracle.com/olcne/ock-ostree:1.32
-      sha: "sha256:b0037ff37816d27b14960c3b3fe2521e8195b3505b1675418c0c7f9827174d05"
+      sha: "sha256:01de40a32c2c2b1fbb53e05f600ecb9c039a8519cfeeb2301d97fa8be26bb1de"
     rpms:
     - name: acl
       version: 2.2.53-3.el8
@@ -1452,26 +1452,29 @@ os:
       version: 0.33-3.el8
       hash: 179d6e28df944723ec933c043bf62162eeb688ae
     - name: conmon
-      version: 2.1.10-1.module+el8.10.0+90704+e5ea1250
-      hash: 6da970712a63815ca954d2e3f6e985b26180d715
+      version: 2.1.10-1.module+el8.10.0+90756+b6fd2933
+      hash: 2ffd7bfb1e74fc74b285c45049f41b51aed14918
     - name: conntrack-tools
       version: 1.4.4-11.el8
       hash: f449880d4254666c8db73c6355eff14f2687f4d6
+    - name: containernetworking-cni
+      version: 1.3.0-2.el8
+      hash: 185e1bd0027fb87a8fd3c4303dc212421f9d4d98
     - name: containernetworking-plugins
       version: 1.9.0-1.el8
       hash: aa666a78d224f584e5ce08f451eb662058d43e67
     - name: containers-common
-      version: 1-82.0.1.module+el8.10.0+90704+e5ea1250
-      hash: a295cd8e300af9b326d56789dae195878752dedd
+      version: 1-82.0.1.module+el8.10.0+90756+b6fd2933
+      hash: a2b716ae0219c66fc09571b92412e976453b4f5c
     - name: container-selinux
-      version: 2.229.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 40c3e7d6222d2220826abed419568e60f85f4604
+      version: 2.229.0-2.module+el8.10.0+90756+b6fd2933
+      hash: a26beb80fae8bc195c7d40f501aea570eed47c56
     - name: coreutils
-      version: 8.30-15.0.1.el8
-      hash: 102f3929c6f47b9f4a525af70f1786dff55cf860
+      version: 8.30-16.0.1.el8_10
+      hash: 6fca7240f027057c9de10765549719ce1da1aa15
     - name: coreutils-common
-      version: 8.30-15.0.1.el8
-      hash: e008db9e0a21d52b6fcd6d92b245e4d9e78e5c9b
+      version: 8.30-16.0.1.el8_10
+      hash: 659ca83108bbb582713b2bb4ac410bc8db5c0642
     - name: cpio
       version: 2.12-11.el8
       hash: aacdaabc96225772435ee869a68b895fdbd68d3e
@@ -1488,8 +1491,8 @@ os:
       version: 1.32.0-1.el8
       hash: 41077f545ff7c608293d4323a60b0fae4810bd8e
     - name: criu
-      version: 3.18-5.module+el8.10.0+90704+e5ea1250
-      hash: 89a0e08f5dba03fbafb2ccbfe3525d73e45e6699
+      version: 3.18-5.module+el8.10.0+90756+b6fd2933
+      hash: 1394add8fbd1a49b96587c42a94473fb303079b1
     - name: crypto-policies
       version: 20230731-1.git3177e06.el8
       hash: 040329ad382ec2fbadc0cbf95d0ad6c4ab78233c
@@ -1500,8 +1503,8 @@ os:
       version: 2.3.7-7.el8
       hash: 7ef15bc53560b4e1964013ebce170778eaf05cfa
     - name: curl
-      version: 7.61.1-34.el8_10.8
-      hash: e78ed1dc7bae0b2f9d55d36b36b1688139bcb05e
+      version: 7.61.1-34.el8_10.9
+      hash: 402ac8f715c0b231f3a73e39010ad4d2ce374f66
     - name: cyrus-sasl-lib
       version: 2.1.27-6.el8_5
       hash: bff5133a48a1a70fda2ec757a382ec234fe675f2
@@ -1551,11 +1554,11 @@ os:
       version: 4.1-6.el8
       hash: 4f486d014dfec13cec583225dc3df287dd19ce21
     - name: dracut
-      version: 049-237.git20250603.0.1.el8_10
-      hash: eb86b553fb0d79dc4238bca2553603c602e65ec8
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 8973d93a8c74944345543ba2acf19f2928917747
     - name: dracut-network
-      version: 049-237.git20250603.0.1.el8_10
-      hash: ded16d481ca932131e4d328cf01526cb95ff3f92
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 07dd789df5f0c83374fcdacbd58485f413bce82c
     - name: e2fsprogs
       version: 1.46.2-2.el8
       hash: 1ca3d172548d4214fca07398d1920a0ef0aaea12
@@ -1602,8 +1605,8 @@ os:
       version: 3.8-6.el8
       hash: 8b9d6e94a49c828a7cc62110e23e8387b0d3bb48
     - name: findutils
-      version: 4.6.0-23.el8_10
-      hash: 1e24310943b414a0903b4869e81bbd81737814e0
+      version: 4.6.0-24.el8_10
+      hash: 2205950ceb70c1fd5dd39bc43f4783b264d38890
     - name: flannel-cni-plugin
       version: 1.9.0-1.el8
       hash: fa76fe1469ddc6727be146fd72c8052e77955af9
@@ -1629,8 +1632,8 @@ os:
       version: 2.9.7-19.0.1.el8
       hash: e0852225d5ae346b65c27219fb6f4bbf8454f102
     - name: fuse-overlayfs
-      version: 1.13-1.module+el8.10.0+90704+e5ea1250
-      hash: a056ba793efcb9e607c2cd0f8ceede732938b5d8
+      version: 1.13-1.module+el8.10.0+90756+b6fd2933
+      hash: 8db12c3f71d7d91d1fac87e567348f3ecee58548
     - name: fwupd
       version: 1.7.8-2.0.1.el8
       hash: 99a7b567db105146b8f7f7ee016e884c6a5a5eed
@@ -1779,11 +1782,11 @@ os:
       version: 1.9.2-1.el8
       hash: 3dbbd0695f014615e313bcfa4cf42841cd064bb9
     - name: iscsi-initiator-utils
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: 4b0561082767b921d9566624246a0e083b5030e5
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 3a49bc8185daec206265ea34f00a8c8c08e7c747
     - name: iscsi-initiator-utils-iscsiuio
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: ff55508fcaacc826093768cf1e028851dc66ed2e
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 2b4b5359d938a45f4dda8e76fa2634829d3d0bd0
     - name: isns-utils-libs
       version: 0.99-1.el8
       hash: 9f9acb12c03568a312b8dd370858e91b23eaeb01
@@ -1815,14 +1818,14 @@ os:
       version: 2.1.5-11.el8_10
       hash: 5400aeaf1e576e9fb06198645bbc6f553fb74d67
     - name: kernel-uek-container
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: b285d321b8f8aed0bb6759943e4a73c30920f5e0
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 3e8503a4108d8fc250a4ab4417bb4dd31e231990
     - name: kernel-uek-core
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: d9d9ab0c81f326c184114f4696d86f2de40ad098
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 19b6d59361cf1843db49ef12073ea118c9cc993d
     - name: kernel-uek-modules
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: fb444f21f0517edd1b5279f67a2f07f555b8ca79
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: ee4445ad0b73f1c4f292752435fb123518aace46
     - name: keyutils
       version: 1.5.10-9.0.1.el8
       hash: 2ee69624fc08a8d724049b6520050d5b4b2ab5af
@@ -1850,9 +1853,6 @@ os:
     - name: kubelet
       version: 1.32.10-1.el8
       hash: 2e21b8f07fff12e2d13360c29077c45d790c398c
-    - name: kubernetes-cni
-      version: 1.2.3-2.el8
-      hash: 7ee2637c15b8cdf0a667694b7bac8508453ed864
     - name: kubernetes-imgs
       version: 1.32.10-1.el8
       hash: b8d567099786d1c781258469db09740ea9a992f7
@@ -1881,8 +1881,8 @@ os:
       version: 0.1.1-40.el8
       hash: d0ad8197e560bf84e90e970b42e3d07415e686f8
     - name: libblkid
-      version: 2.32.1-46.0.1.el8
-      hash: d664f78c5e772b3a09ae9ead566b0824966f009a
+      version: 2.32.1-47.0.1.el8_10
+      hash: b7d813bc3ababed0a93d0eb3942fb71a85125481
     - name: libblockdev
       version: 2.28-7.0.1.el8_10
       hash: eec4eba51db88b673b834bebfd87f23f45d8582d
@@ -1929,8 +1929,8 @@ os:
       version: 0.6.12-4.el8_2.1
       hash: d97c04798cd504df6acbe28f1ced1b19c6231616
     - name: libcurl
-      version: 7.61.1-34.el8_10.8
-      hash: 384483ee77121105c4e7e71ff88018045931db3d
+      version: 7.61.1-34.el8_10.9
+      hash: c8401f0d40b0830411ebf9945ae350c41483d9f4
     - name: libdb
       version: 5.3.28-42.0.1.el8_4
       hash: 93d98ec64ffb968a5d16e8d902b4541ec394be28
@@ -1947,8 +1947,8 @@ os:
       version: 2.1.8-5.el8
       hash: c4ade184aa910e3c8bbecc1bdf0789ce7cdc4537
     - name: libfdisk
-      version: 2.32.1-46.0.1.el8
-      hash: 2ea6a079326347fa81b3bdaede423325fd1c25d8
+      version: 2.32.1-47.0.1.el8_10
+      hash: 2615d596107cf1446c2edbc2c94bf908a89e9244
     - name: libfdt
       version: 1.6.0-1.el8
       hash: 9eb386e4c0dd37dd4efd7cc35e6f6f26be945d26
@@ -2007,8 +2007,8 @@ os:
       version: 2.13.0-1.el8
       hash: 6a464eb0e300d43eae3248f59ab046ff65bd8ebc
     - name: libmount
-      version: 2.32.1-46.0.1.el8
-      hash: f9778b81fce245a6e4e6656f06cf9341ffe44260
+      version: 2.32.1-47.0.1.el8_10
+      hash: 03fdcd205ab13525a40aa4c6d68f26ee79a340d8
     - name: libndp
       version: 1.7-7.el8_10
       hash: 50d01548c587bfcded90ef1bd0c3e2c2e1b29fce
@@ -2055,8 +2055,8 @@ os:
       version: 1.6.1-1.el8
       hash: 1f31c845c59e0098b2619726ba4758c87acd4582
     - name: libpng
-      version: 1.6.34-5.el8
-      hash: 69b136deae35c2d67d2f5db3b6f01f47f9d01fd9
+      version: 1.6.34-9.el8_10
+      hash: 57b01a5c3a1efe21dcee7073ea54cd5be0a341c3
     - name: libpsl
       version: 0.20.2-6.el8
       hash: d12803cf25aa3dfa33e4a17277075ee6fbc5c952
@@ -2106,11 +2106,11 @@ os:
       version: 2.11-5.el8
       hash: 7abfe541f9bcc93d10d9a38212643c69e6b8091c
     - name: libslirp
-      version: 4.4.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 7676baded6355fd56122282a12c8ed9d2d9744f3
+      version: 4.4.0-2.module+el8.10.0+90756+b6fd2933
+      hash: b17a1a8cda0962f1ec9eaca1f892b0045cb4cad5
     - name: libsmartcols
-      version: 2.32.1-46.0.1.el8
-      hash: 81721c0268490176e9f400cbdadf7ead85defac1
+      version: 2.32.1-47.0.1.el8_10
+      hash: 380261158b9082c052c9a704ef1b12b48c951c9e
     - name: libsmbios
       version: 2.4.1-2.el8
       hash: 72e44867fb03da9d639ac7ed6c448c01217111ff
@@ -2151,8 +2151,8 @@ os:
       version: 1.1.6-14.el8
       hash: 60e6ee9336839a89ae7500f6deb1b089aab57398
     - name: libuuid
-      version: 2.32.1-46.0.1.el8
-      hash: 2f7a5f1102ba0a650b9e91acbdab9a0d52228594
+      version: 2.32.1-47.0.1.el8_10
+      hash: a8dbbd660ff0969b046f53961662a225473af799
     - name: libverto
       version: 0.3.2-2.el8
       hash: a2934c777a7b907c2d14c935c67a0052377a6a99
@@ -2238,11 +2238,11 @@ os:
       version: 6.1-10.20180224.el8
       hash: 2ea59bcd42754bda24f0af14e7b6a4bb1646a62a
     - name: net-snmp-agent-libs
-      version: 5.8-31.0.1.el8_10
-      hash: 0e9a66ded20c1955d1f587cb192f2639b1e07261
+      version: 5.8-32.0.1.el8_10
+      hash: f6e5fa3081262ece7f1281faaf1369681c7fdd05
     - name: net-snmp-libs
-      version: 5.8-31.0.1.el8_10
-      hash: a2218a198ea590fd378a55760df0053d964d297b
+      version: 5.8-32.0.1.el8_10
+      hash: ba9da51b5442df83fd45807aaac77c8581fa16cd
     - name: nettle
       version: 3.4.1-7.el8
       hash: 93dae1e6b253287e9669cf5e24d9a4268847ad36
@@ -2307,20 +2307,20 @@ os:
       version: 2.4.46-21.el8_10
       hash: 009bcb3f60e76ec3478f2417ffcf19bec3844d29
     - name: openssh
-      version: 8.0p1-26.0.1.el8_10
-      hash: 28ac98bdde62644cf8880dbbcd14420095febb70
+      version: 8.0p1-27.0.1.el8_10
+      hash: bda6a580ead171d344d1cb56cbb3ce8d912e1558
     - name: openssh-clients
-      version: 8.0p1-26.0.1.el8_10
-      hash: 10e307688de6508f884a925bea282c779e317284
+      version: 8.0p1-27.0.1.el8_10
+      hash: f9d907a65ce41399217334b599e9a728e5c23a1e
     - name: openssh-server
-      version: 8.0p1-26.0.1.el8_10
-      hash: 77a885740b836baed1560493c582e4b8b63b0f26
+      version: 8.0p1-27.0.1.el8_10
+      hash: 038a7db0e748eedca0b7242ed798b2a2c8007f1d
     - name: openssl
-      version: 1.1.1k-14.el8_6
-      hash: 20cd3532d72908821a2aae7bfca631039ddc563a
+      version: 1.1.1k-14.el8_10
+      hash: 536aa66beda6496339f3ce2389daee62ef425283
     - name: openssl-libs
-      version: 1.1.1k-14.el8_6
-      hash: 4f627f066a74e71966ffcb3d60bd1bfe1cd1eb12
+      version: 1.1.1k-14.el8_10
+      hash: d4dffb0c2dc31a64f161c12150848542c05f234f
     - name: openssl-pkcs11
       version: 0.4.10-3.el8
       hash: 06b546533bebb603a7bf88633880658d63f77583
@@ -2343,8 +2343,8 @@ os:
       version: 0.23.22-2.el8
       hash: ec2fc66cedd554652a8ac0c90cbed1f052b91095
     - name: pam
-      version: 1.3.1-38.0.1.el8_10
-      hash: bb93fd3b7d850f204b5de71adc9cdac78f2299f3
+      version: 1.3.1-39.0.1.el8_10
+      hash: 8862890235a702348ff0ee87f737db266a5c588a
     - name: parted
       version: 3.2-39.0.2.el8
       hash: 6231c23cc7a7fa439d8321f6b3b88d762868019d
@@ -2499,17 +2499,17 @@ os:
       version: 39.2.0-9.el8_10
       hash: c3823c1bd15423897ab90d349347ce7c82cffd55
     - name: podman
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: cfd0602826b674c18c4c075bef84021bf7d385f1
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: b6333e653ec122b5bf80c6e95bc2c4b246b7a421
     - name: podman-catatonit
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 670c199b3de3e80cc51328c7cb1efd0fc4936058
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 79d39af61785d5f33ae650dbc39435cceb2b54e0
     - name: podman-gvproxy
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 7c149d712e3ab14f858582b11919647ae9721603
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: ebeb780478db1d580555555c11ed91aa40c7e27b
     - name: podman-plugins
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 723242b3394f2c6e91cbfadfcfbe31b0c4141c08
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 2467c95c1f89c8d7500017094c465349974c866e
     - name: policycoreutils
       version: 2.9-26.0.1.el8_10
       hash: 68ca7657a1392b41573f4392fe2576c089e8022a
@@ -2649,8 +2649,8 @@ os:
       version: 4.14.3-32.0.1.el8_10
       hash: c1bb1eeeb6d549e0c2a30b1a8ad3e45d494a4fef
     - name: runc
-      version: 1.2.5-2.module+el8.10.0+90704+e5ea1250
-      hash: 308c8c5b1c24575f9926f788acc5a6b42ff5fdf3
+      version: 1.2.9-2.module+el8.10.0+90756+b6fd2933
+      hash: 67e363b99bf85755be4336303482099c162c5e70
     - name: seabios-bin
       version: 1.16.0-4.module+el8.10.0+90665+904479bd
       hash: 49235065e7c72b78b495aa2e8fb2b13f57c999fe
@@ -2673,11 +2673,11 @@ os:
       version: 0.20170427git-3.module+el8.10.0+90665+904479bd
       hash: 4888561850eaecf73b62c0bbe81cc3cab6066913
     - name: shadow-utils
-      version: 4.6-22.el8
-      hash: 568ff4fe47b1a65d25cc8c912c46b98fea1da7d1
+      version: 4.6-23.el8_10
+      hash: e61db07ab1db39b8549d9f581829b65194769d7e
     - name: shadow-utils-subid
-      version: 4.6-22.el8
-      hash: b61d3913a565f0892946ef6b7aad7ffeb15b3f25
+      version: 4.6-23.el8_10
+      hash: 0b74d2de1f032c5338d77cbdad8e5755ea79f6da
     - name: shared-mime-info
       version: 1.9-4.el8
       hash: 4c5005e91369f0691c72c3ce098fe69955f1c7ae
@@ -2685,11 +2685,11 @@ os:
       version: 15.8-4.0.3.el8_10
       hash: 5574f83134b24ab4635feb961bdc26ca99beb1b8
     - name: skopeo
-      version: 1.14.5-4.module+el8.10.0+90704+e5ea1250
-      hash: 65d9de317c17b7c5024c37c0c761e65ca5859bfd
+      version: 1.14.5-5.module+el8.10.0+90756+b6fd2933
+      hash: 6feb0cb2975fed4184d018d0bcf8290c6e0d9b26
     - name: slirp4netns
-      version: 1.2.3-1.module+el8.10.0+90704+e5ea1250
-      hash: f61af965552c9b8eb9b26ef20d84969531f5a0ba
+      version: 1.2.3-1.module+el8.10.0+90756+b6fd2933
+      hash: 081a285d4288f306dcbbaca69bc6da80f97d0b05
     - name: snappy
       version: 1.1.8-3.el8
       hash: 0b7eb0df322e1ed39a631a57265b4a37c7be0c00
@@ -2700,23 +2700,23 @@ os:
       version: 3.26.0-20.el8_10
       hash: 39c9e11b5605c2db65d02234ab50a23b12904f30
     - name: sudo
-      version: 1.9.5p2-1.0.1.el8_10.2
-      hash: 1ffcf56ddbaa5b230189d322dcc42c580a70a8dc
+      version: 1.9.5p2-1.0.1.el8_10.3
+      hash: 64dd42e30d42f649f60fe18dd76c2d53b1e60bfb
     - name: systemd
-      version: 239-82.0.7.el8_10.8
-      hash: 3146165125b7848c5913ceb15e33eea08425c998
+      version: 239-82.0.8.el8_10.8
+      hash: 5ec6d58b76bfa051a33059684a5fa884d8e6dbc9
     - name: systemd-container
-      version: 239-82.0.7.el8_10.8
-      hash: 909567e3a3f1e66f8c97d74a7cb0e39ae1251a97
+      version: 239-82.0.8.el8_10.8
+      hash: 8d57dcaad50c5bc1ac3196ba5b14998c194ca27f
     - name: systemd-libs
-      version: 239-82.0.7.el8_10.8
-      hash: 595b226446f332f3a1369fe2a86f98b2e8bf38cb
+      version: 239-82.0.8.el8_10.8
+      hash: a283ef4cd990995a1138b7b2326a8b13bca358b6
     - name: systemd-pam
-      version: 239-82.0.7.el8_10.8
-      hash: 66ee7967e635855aa7aa59d678eef6062e94d7f7
+      version: 239-82.0.8.el8_10.8
+      hash: 0ac40627914b1d5b45a09ff343c12440362608c9
     - name: systemd-udev
-      version: 239-82.0.7.el8_10.8
-      hash: 1971e3889d039bff8baffc3e2a2ed337589e5259
+      version: 239-82.0.8.el8_10.8
+      hash: cc6bb997a2e3654aa46af0706618911422eadce8
     - name: tar
       version: 1.30-11.el8_10
       hash: 4456ddfc8b5ad0e02fd071689bd46f7a0051e8a4
@@ -2733,8 +2733,8 @@ os:
       version: 0.3.15-2.el8
       hash: 178478462a1ced9ef90beb443d9688ee4176fd6c
     - name: tzdata
-      version: 2025b-1.0.1.el8
-      hash: 02e72e74654bde97ca92508045f21be483da0fea
+      version: 2025c-1.0.1.el8
+      hash: 0f26f3f34c8e8a7b36309d5f69de37438e27ddb5
     - name: udisks2
       version: 2.9.0-16.el8_10.1
       hash: baf7b91879596382c7001064fbefe6d9d56d9873
@@ -2742,8 +2742,8 @@ os:
       version: 0.10.1-4.el8
       hash: 2e9f21960fb47cf9a0dcc099c1a31118e65dc966
     - name: util-linux
-      version: 2.32.1-46.0.1.el8
-      hash: b6d3fb0410729c31feb01a7945b507a6a7605e20
+      version: 2.32.1-47.0.1.el8_10
+      hash: 76021615e0a10f8f45a6bba07f338f665ea2dd4d
     - name: vim-minimal
       version: 8.0.1763-21.0.1.el8_10
       hash: 4e59136e2a7429ce4a97373be02bc42da1520e15
@@ -2777,9 +2777,9 @@ os:
   - version: 1.31
     images:
     - image: container-registry.oracle.com/olcne/ock:1.31
-      sha: "sha256:146d2e09566653a39741e1a6b25af4131e887cf7c242752a2077fae06ac07879"
+      sha: "sha256:9d368bcbb0e63d2b1fd4acb1de6b723a4aae6fbc5d6da80f4ad597654d5d155d"
     - image: container-registry.oracle.com/olcne/ock-ostree:1.31
-      sha: "sha256:ef4d03739995cf14ed281a16f1d923fe7945ed294f5f59c7caabed1f0fd59437"
+      sha: "sha256:c25030c3931528f838025e2f11077b182487db9e4261209cdc49f66188b9fada"
     rpms:
     - name: acl
       version: 2.2.53-3.el8
@@ -2839,26 +2839,29 @@ os:
       version: 0.33-3.el8
       hash: 179d6e28df944723ec933c043bf62162eeb688ae
     - name: conmon
-      version: 2.1.10-1.module+el8.10.0+90704+e5ea1250
-      hash: 6da970712a63815ca954d2e3f6e985b26180d715
+      version: 2.1.10-1.module+el8.10.0+90756+b6fd2933
+      hash: 2ffd7bfb1e74fc74b285c45049f41b51aed14918
     - name: conntrack-tools
       version: 1.4.4-11.el8
       hash: f449880d4254666c8db73c6355eff14f2687f4d6
+    - name: containernetworking-cni
+      version: 1.3.0-2.el8
+      hash: 185e1bd0027fb87a8fd3c4303dc212421f9d4d98
     - name: containernetworking-plugins
       version: 1.9.0-1.el8
       hash: aa666a78d224f584e5ce08f451eb662058d43e67
     - name: containers-common
-      version: 1-82.0.1.module+el8.10.0+90704+e5ea1250
-      hash: a295cd8e300af9b326d56789dae195878752dedd
+      version: 1-82.0.1.module+el8.10.0+90756+b6fd2933
+      hash: a2b716ae0219c66fc09571b92412e976453b4f5c
     - name: container-selinux
-      version: 2.229.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 40c3e7d6222d2220826abed419568e60f85f4604
+      version: 2.229.0-2.module+el8.10.0+90756+b6fd2933
+      hash: a26beb80fae8bc195c7d40f501aea570eed47c56
     - name: coreutils
-      version: 8.30-15.0.1.el8
-      hash: 102f3929c6f47b9f4a525af70f1786dff55cf860
+      version: 8.30-16.0.1.el8_10
+      hash: 6fca7240f027057c9de10765549719ce1da1aa15
     - name: coreutils-common
-      version: 8.30-15.0.1.el8
-      hash: e008db9e0a21d52b6fcd6d92b245e4d9e78e5c9b
+      version: 8.30-16.0.1.el8_10
+      hash: 659ca83108bbb582713b2bb4ac410bc8db5c0642
     - name: cpio
       version: 2.12-11.el8
       hash: aacdaabc96225772435ee869a68b895fdbd68d3e
@@ -2875,8 +2878,8 @@ os:
       version: 1.31.1-1.el8
       hash: 6a9adeba95bb0e4ee71bc9f3390c91a1b85af50f
     - name: criu
-      version: 3.18-5.module+el8.10.0+90704+e5ea1250
-      hash: 89a0e08f5dba03fbafb2ccbfe3525d73e45e6699
+      version: 3.18-5.module+el8.10.0+90756+b6fd2933
+      hash: 1394add8fbd1a49b96587c42a94473fb303079b1
     - name: crypto-policies
       version: 20230731-1.git3177e06.el8
       hash: 040329ad382ec2fbadc0cbf95d0ad6c4ab78233c
@@ -2887,8 +2890,8 @@ os:
       version: 2.3.7-7.el8
       hash: 7ef15bc53560b4e1964013ebce170778eaf05cfa
     - name: curl
-      version: 7.61.1-34.el8_10.8
-      hash: e78ed1dc7bae0b2f9d55d36b36b1688139bcb05e
+      version: 7.61.1-34.el8_10.9
+      hash: 402ac8f715c0b231f3a73e39010ad4d2ce374f66
     - name: cyrus-sasl-lib
       version: 2.1.27-6.el8_5
       hash: bff5133a48a1a70fda2ec757a382ec234fe675f2
@@ -2938,11 +2941,11 @@ os:
       version: 4.1-6.el8
       hash: 4f486d014dfec13cec583225dc3df287dd19ce21
     - name: dracut
-      version: 049-237.git20250603.0.1.el8_10
-      hash: eb86b553fb0d79dc4238bca2553603c602e65ec8
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 8973d93a8c74944345543ba2acf19f2928917747
     - name: dracut-network
-      version: 049-237.git20250603.0.1.el8_10
-      hash: ded16d481ca932131e4d328cf01526cb95ff3f92
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 07dd789df5f0c83374fcdacbd58485f413bce82c
     - name: e2fsprogs
       version: 1.46.2-2.el8
       hash: 1ca3d172548d4214fca07398d1920a0ef0aaea12
@@ -2989,8 +2992,8 @@ os:
       version: 3.8-6.el8
       hash: 8b9d6e94a49c828a7cc62110e23e8387b0d3bb48
     - name: findutils
-      version: 4.6.0-23.el8_10
-      hash: 1e24310943b414a0903b4869e81bbd81737814e0
+      version: 4.6.0-24.el8_10
+      hash: 2205950ceb70c1fd5dd39bc43f4783b264d38890
     - name: flannel-cni-plugin
       version: 1.9.0-1.el8
       hash: fa76fe1469ddc6727be146fd72c8052e77955af9
@@ -3016,8 +3019,8 @@ os:
       version: 2.9.7-19.0.1.el8
       hash: e0852225d5ae346b65c27219fb6f4bbf8454f102
     - name: fuse-overlayfs
-      version: 1.13-1.module+el8.10.0+90704+e5ea1250
-      hash: a056ba793efcb9e607c2cd0f8ceede732938b5d8
+      version: 1.13-1.module+el8.10.0+90756+b6fd2933
+      hash: 8db12c3f71d7d91d1fac87e567348f3ecee58548
     - name: fwupd
       version: 1.7.8-2.0.1.el8
       hash: 99a7b567db105146b8f7f7ee016e884c6a5a5eed
@@ -3166,11 +3169,11 @@ os:
       version: 1.9.2-1.el8
       hash: 3dbbd0695f014615e313bcfa4cf42841cd064bb9
     - name: iscsi-initiator-utils
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: 4b0561082767b921d9566624246a0e083b5030e5
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 3a49bc8185daec206265ea34f00a8c8c08e7c747
     - name: iscsi-initiator-utils-iscsiuio
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: ff55508fcaacc826093768cf1e028851dc66ed2e
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 2b4b5359d938a45f4dda8e76fa2634829d3d0bd0
     - name: isns-utils-libs
       version: 0.99-1.el8
       hash: 9f9acb12c03568a312b8dd370858e91b23eaeb01
@@ -3202,14 +3205,14 @@ os:
       version: 2.1.5-11.el8_10
       hash: 5400aeaf1e576e9fb06198645bbc6f553fb74d67
     - name: kernel-uek-container
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: b285d321b8f8aed0bb6759943e4a73c30920f5e0
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 3e8503a4108d8fc250a4ab4417bb4dd31e231990
     - name: kernel-uek-core
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: d9d9ab0c81f326c184114f4696d86f2de40ad098
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 19b6d59361cf1843db49ef12073ea118c9cc993d
     - name: kernel-uek-modules
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: fb444f21f0517edd1b5279f67a2f07f555b8ca79
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: ee4445ad0b73f1c4f292752435fb123518aace46
     - name: keyutils
       version: 1.5.10-9.0.1.el8
       hash: 2ee69624fc08a8d724049b6520050d5b4b2ab5af
@@ -3237,9 +3240,6 @@ os:
     - name: kubelet
       version: 1.31.14-1.el8
       hash: 275b8ecee8741e1a2ad299645676519fffca73be
-    - name: kubernetes-cni
-      version: 1.2.3-2.el8
-      hash: 7ee2637c15b8cdf0a667694b7bac8508453ed864
     - name: kubernetes-imgs
       version: 1.31.14-1.el8
       hash: ce5b9ffa6f8f003f980c1aef543288d5f7982b9d
@@ -3268,8 +3268,8 @@ os:
       version: 0.1.1-40.el8
       hash: d0ad8197e560bf84e90e970b42e3d07415e686f8
     - name: libblkid
-      version: 2.32.1-46.0.1.el8
-      hash: d664f78c5e772b3a09ae9ead566b0824966f009a
+      version: 2.32.1-47.0.1.el8_10
+      hash: b7d813bc3ababed0a93d0eb3942fb71a85125481
     - name: libblockdev
       version: 2.28-7.0.1.el8_10
       hash: eec4eba51db88b673b834bebfd87f23f45d8582d
@@ -3316,8 +3316,8 @@ os:
       version: 0.6.12-4.el8_2.1
       hash: d97c04798cd504df6acbe28f1ced1b19c6231616
     - name: libcurl
-      version: 7.61.1-34.el8_10.8
-      hash: 384483ee77121105c4e7e71ff88018045931db3d
+      version: 7.61.1-34.el8_10.9
+      hash: c8401f0d40b0830411ebf9945ae350c41483d9f4
     - name: libdb
       version: 5.3.28-42.0.1.el8_4
       hash: 93d98ec64ffb968a5d16e8d902b4541ec394be28
@@ -3334,8 +3334,8 @@ os:
       version: 2.1.8-5.el8
       hash: c4ade184aa910e3c8bbecc1bdf0789ce7cdc4537
     - name: libfdisk
-      version: 2.32.1-46.0.1.el8
-      hash: 2ea6a079326347fa81b3bdaede423325fd1c25d8
+      version: 2.32.1-47.0.1.el8_10
+      hash: 2615d596107cf1446c2edbc2c94bf908a89e9244
     - name: libfdt
       version: 1.6.0-1.el8
       hash: 9eb386e4c0dd37dd4efd7cc35e6f6f26be945d26
@@ -3394,8 +3394,8 @@ os:
       version: 2.13.0-1.el8
       hash: 6a464eb0e300d43eae3248f59ab046ff65bd8ebc
     - name: libmount
-      version: 2.32.1-46.0.1.el8
-      hash: f9778b81fce245a6e4e6656f06cf9341ffe44260
+      version: 2.32.1-47.0.1.el8_10
+      hash: 03fdcd205ab13525a40aa4c6d68f26ee79a340d8
     - name: libndp
       version: 1.7-7.el8_10
       hash: 50d01548c587bfcded90ef1bd0c3e2c2e1b29fce
@@ -3442,8 +3442,8 @@ os:
       version: 1.6.1-1.el8
       hash: 1f31c845c59e0098b2619726ba4758c87acd4582
     - name: libpng
-      version: 1.6.34-5.el8
-      hash: 69b136deae35c2d67d2f5db3b6f01f47f9d01fd9
+      version: 1.6.34-9.el8_10
+      hash: 57b01a5c3a1efe21dcee7073ea54cd5be0a341c3
     - name: libpsl
       version: 0.20.2-6.el8
       hash: d12803cf25aa3dfa33e4a17277075ee6fbc5c952
@@ -3493,11 +3493,11 @@ os:
       version: 2.11-5.el8
       hash: 7abfe541f9bcc93d10d9a38212643c69e6b8091c
     - name: libslirp
-      version: 4.4.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 7676baded6355fd56122282a12c8ed9d2d9744f3
+      version: 4.4.0-2.module+el8.10.0+90756+b6fd2933
+      hash: b17a1a8cda0962f1ec9eaca1f892b0045cb4cad5
     - name: libsmartcols
-      version: 2.32.1-46.0.1.el8
-      hash: 81721c0268490176e9f400cbdadf7ead85defac1
+      version: 2.32.1-47.0.1.el8_10
+      hash: 380261158b9082c052c9a704ef1b12b48c951c9e
     - name: libsmbios
       version: 2.4.1-2.el8
       hash: 72e44867fb03da9d639ac7ed6c448c01217111ff
@@ -3538,8 +3538,8 @@ os:
       version: 1.1.6-14.el8
       hash: 60e6ee9336839a89ae7500f6deb1b089aab57398
     - name: libuuid
-      version: 2.32.1-46.0.1.el8
-      hash: 2f7a5f1102ba0a650b9e91acbdab9a0d52228594
+      version: 2.32.1-47.0.1.el8_10
+      hash: a8dbbd660ff0969b046f53961662a225473af799
     - name: libverto
       version: 0.3.2-2.el8
       hash: a2934c777a7b907c2d14c935c67a0052377a6a99
@@ -3625,11 +3625,11 @@ os:
       version: 6.1-10.20180224.el8
       hash: 2ea59bcd42754bda24f0af14e7b6a4bb1646a62a
     - name: net-snmp-agent-libs
-      version: 5.8-31.0.1.el8_10
-      hash: 0e9a66ded20c1955d1f587cb192f2639b1e07261
+      version: 5.8-32.0.1.el8_10
+      hash: f6e5fa3081262ece7f1281faaf1369681c7fdd05
     - name: net-snmp-libs
-      version: 5.8-31.0.1.el8_10
-      hash: a2218a198ea590fd378a55760df0053d964d297b
+      version: 5.8-32.0.1.el8_10
+      hash: ba9da51b5442df83fd45807aaac77c8581fa16cd
     - name: nettle
       version: 3.4.1-7.el8
       hash: 93dae1e6b253287e9669cf5e24d9a4268847ad36
@@ -3694,20 +3694,20 @@ os:
       version: 2.4.46-21.el8_10
       hash: 009bcb3f60e76ec3478f2417ffcf19bec3844d29
     - name: openssh
-      version: 8.0p1-26.0.1.el8_10
-      hash: 28ac98bdde62644cf8880dbbcd14420095febb70
+      version: 8.0p1-27.0.1.el8_10
+      hash: bda6a580ead171d344d1cb56cbb3ce8d912e1558
     - name: openssh-clients
-      version: 8.0p1-26.0.1.el8_10
-      hash: 10e307688de6508f884a925bea282c779e317284
+      version: 8.0p1-27.0.1.el8_10
+      hash: f9d907a65ce41399217334b599e9a728e5c23a1e
     - name: openssh-server
-      version: 8.0p1-26.0.1.el8_10
-      hash: 77a885740b836baed1560493c582e4b8b63b0f26
+      version: 8.0p1-27.0.1.el8_10
+      hash: 038a7db0e748eedca0b7242ed798b2a2c8007f1d
     - name: openssl
-      version: 1.1.1k-14.el8_6
-      hash: 20cd3532d72908821a2aae7bfca631039ddc563a
+      version: 1.1.1k-14.el8_10
+      hash: 536aa66beda6496339f3ce2389daee62ef425283
     - name: openssl-libs
-      version: 1.1.1k-14.el8_6
-      hash: 4f627f066a74e71966ffcb3d60bd1bfe1cd1eb12
+      version: 1.1.1k-14.el8_10
+      hash: d4dffb0c2dc31a64f161c12150848542c05f234f
     - name: openssl-pkcs11
       version: 0.4.10-3.el8
       hash: 06b546533bebb603a7bf88633880658d63f77583
@@ -3730,8 +3730,8 @@ os:
       version: 0.23.22-2.el8
       hash: ec2fc66cedd554652a8ac0c90cbed1f052b91095
     - name: pam
-      version: 1.3.1-38.0.1.el8_10
-      hash: bb93fd3b7d850f204b5de71adc9cdac78f2299f3
+      version: 1.3.1-39.0.1.el8_10
+      hash: 8862890235a702348ff0ee87f737db266a5c588a
     - name: parted
       version: 3.2-39.0.2.el8
       hash: 6231c23cc7a7fa439d8321f6b3b88d762868019d
@@ -3886,17 +3886,17 @@ os:
       version: 39.2.0-9.el8_10
       hash: c3823c1bd15423897ab90d349347ce7c82cffd55
     - name: podman
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: cfd0602826b674c18c4c075bef84021bf7d385f1
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: b6333e653ec122b5bf80c6e95bc2c4b246b7a421
     - name: podman-catatonit
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 670c199b3de3e80cc51328c7cb1efd0fc4936058
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 79d39af61785d5f33ae650dbc39435cceb2b54e0
     - name: podman-gvproxy
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 7c149d712e3ab14f858582b11919647ae9721603
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: ebeb780478db1d580555555c11ed91aa40c7e27b
     - name: podman-plugins
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 723242b3394f2c6e91cbfadfcfbe31b0c4141c08
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 2467c95c1f89c8d7500017094c465349974c866e
     - name: policycoreutils
       version: 2.9-26.0.1.el8_10
       hash: 68ca7657a1392b41573f4392fe2576c089e8022a
@@ -4036,8 +4036,8 @@ os:
       version: 4.14.3-32.0.1.el8_10
       hash: c1bb1eeeb6d549e0c2a30b1a8ad3e45d494a4fef
     - name: runc
-      version: 1.2.5-2.module+el8.10.0+90704+e5ea1250
-      hash: 308c8c5b1c24575f9926f788acc5a6b42ff5fdf3
+      version: 1.2.9-2.module+el8.10.0+90756+b6fd2933
+      hash: 67e363b99bf85755be4336303482099c162c5e70
     - name: seabios-bin
       version: 1.16.0-4.module+el8.10.0+90665+904479bd
       hash: 49235065e7c72b78b495aa2e8fb2b13f57c999fe
@@ -4060,11 +4060,11 @@ os:
       version: 0.20170427git-3.module+el8.10.0+90665+904479bd
       hash: 4888561850eaecf73b62c0bbe81cc3cab6066913
     - name: shadow-utils
-      version: 4.6-22.el8
-      hash: 568ff4fe47b1a65d25cc8c912c46b98fea1da7d1
+      version: 4.6-23.el8_10
+      hash: e61db07ab1db39b8549d9f581829b65194769d7e
     - name: shadow-utils-subid
-      version: 4.6-22.el8
-      hash: b61d3913a565f0892946ef6b7aad7ffeb15b3f25
+      version: 4.6-23.el8_10
+      hash: 0b74d2de1f032c5338d77cbdad8e5755ea79f6da
     - name: shared-mime-info
       version: 1.9-4.el8
       hash: 4c5005e91369f0691c72c3ce098fe69955f1c7ae
@@ -4072,11 +4072,11 @@ os:
       version: 15.8-4.0.3.el8_10
       hash: 5574f83134b24ab4635feb961bdc26ca99beb1b8
     - name: skopeo
-      version: 1.14.5-4.module+el8.10.0+90704+e5ea1250
-      hash: 65d9de317c17b7c5024c37c0c761e65ca5859bfd
+      version: 1.14.5-5.module+el8.10.0+90756+b6fd2933
+      hash: 6feb0cb2975fed4184d018d0bcf8290c6e0d9b26
     - name: slirp4netns
-      version: 1.2.3-1.module+el8.10.0+90704+e5ea1250
-      hash: f61af965552c9b8eb9b26ef20d84969531f5a0ba
+      version: 1.2.3-1.module+el8.10.0+90756+b6fd2933
+      hash: 081a285d4288f306dcbbaca69bc6da80f97d0b05
     - name: snappy
       version: 1.1.8-3.el8
       hash: 0b7eb0df322e1ed39a631a57265b4a37c7be0c00
@@ -4087,23 +4087,23 @@ os:
       version: 3.26.0-20.el8_10
       hash: 39c9e11b5605c2db65d02234ab50a23b12904f30
     - name: sudo
-      version: 1.9.5p2-1.0.1.el8_10.2
-      hash: 1ffcf56ddbaa5b230189d322dcc42c580a70a8dc
+      version: 1.9.5p2-1.0.1.el8_10.3
+      hash: 64dd42e30d42f649f60fe18dd76c2d53b1e60bfb
     - name: systemd
-      version: 239-82.0.7.el8_10.8
-      hash: 3146165125b7848c5913ceb15e33eea08425c998
+      version: 239-82.0.8.el8_10.8
+      hash: 5ec6d58b76bfa051a33059684a5fa884d8e6dbc9
     - name: systemd-container
-      version: 239-82.0.7.el8_10.8
-      hash: 909567e3a3f1e66f8c97d74a7cb0e39ae1251a97
+      version: 239-82.0.8.el8_10.8
+      hash: 8d57dcaad50c5bc1ac3196ba5b14998c194ca27f
     - name: systemd-libs
-      version: 239-82.0.7.el8_10.8
-      hash: 595b226446f332f3a1369fe2a86f98b2e8bf38cb
+      version: 239-82.0.8.el8_10.8
+      hash: a283ef4cd990995a1138b7b2326a8b13bca358b6
     - name: systemd-pam
-      version: 239-82.0.7.el8_10.8
-      hash: 66ee7967e635855aa7aa59d678eef6062e94d7f7
+      version: 239-82.0.8.el8_10.8
+      hash: 0ac40627914b1d5b45a09ff343c12440362608c9
     - name: systemd-udev
-      version: 239-82.0.7.el8_10.8
-      hash: 1971e3889d039bff8baffc3e2a2ed337589e5259
+      version: 239-82.0.8.el8_10.8
+      hash: cc6bb997a2e3654aa46af0706618911422eadce8
     - name: tar
       version: 1.30-11.el8_10
       hash: 4456ddfc8b5ad0e02fd071689bd46f7a0051e8a4
@@ -4120,8 +4120,8 @@ os:
       version: 0.3.15-2.el8
       hash: 178478462a1ced9ef90beb443d9688ee4176fd6c
     - name: tzdata
-      version: 2025b-1.0.1.el8
-      hash: 02e72e74654bde97ca92508045f21be483da0fea
+      version: 2025c-1.0.1.el8
+      hash: 0f26f3f34c8e8a7b36309d5f69de37438e27ddb5
     - name: udisks2
       version: 2.9.0-16.el8_10.1
       hash: baf7b91879596382c7001064fbefe6d9d56d9873
@@ -4129,8 +4129,8 @@ os:
       version: 0.10.1-4.el8
       hash: 2e9f21960fb47cf9a0dcc099c1a31118e65dc966
     - name: util-linux
-      version: 2.32.1-46.0.1.el8
-      hash: b6d3fb0410729c31feb01a7945b507a6a7605e20
+      version: 2.32.1-47.0.1.el8_10
+      hash: 76021615e0a10f8f45a6bba07f338f665ea2dd4d
     - name: vim-minimal
       version: 8.0.1763-21.0.1.el8_10
       hash: 4e59136e2a7429ce4a97373be02bc42da1520e15
@@ -4164,9 +4164,9 @@ os:
   - version: 1.30
     images:
     - image: container-registry.oracle.com/olcne/ock:1.30
-      sha: "sha256:dac3abcbbfcee99161786c0378e07430d331ebd61e74cf8ac6c43fa836de5e2a"
+      sha: "sha256:80cc7e10c97d2c6b5134bbcf39f4f9ffc6a57a1b2b011f3c3319e911ed27c334"
     - image: container-registry.oracle.com/olcne/ock-ostree:1.30
-      sha: "sha256:3bcf418272b477af3e6a2d712eb7de3135502c10cc2d6b21c30c7ee9857dc55b"
+      sha: "sha256:a0585be715cda3d80dbc85c5c37c835a0ca1227dcd67798b4dc059d4ca717514"
     rpms:
     - name: acl
       version: 2.2.53-3.el8
@@ -4226,26 +4226,29 @@ os:
       version: 0.33-3.el8
       hash: 179d6e28df944723ec933c043bf62162eeb688ae
     - name: conmon
-      version: 2.1.10-1.module+el8.10.0+90704+e5ea1250
-      hash: 6da970712a63815ca954d2e3f6e985b26180d715
+      version: 2.1.10-1.module+el8.10.0+90756+b6fd2933
+      hash: 2ffd7bfb1e74fc74b285c45049f41b51aed14918
     - name: conntrack-tools
       version: 1.4.4-11.el8
       hash: f449880d4254666c8db73c6355eff14f2687f4d6
+    - name: containernetworking-cni
+      version: 1.3.0-2.el8
+      hash: 185e1bd0027fb87a8fd3c4303dc212421f9d4d98
     - name: containernetworking-plugins
       version: 1.9.0-1.el8
       hash: aa666a78d224f584e5ce08f451eb662058d43e67
     - name: containers-common
-      version: 1-82.0.1.module+el8.10.0+90704+e5ea1250
-      hash: a295cd8e300af9b326d56789dae195878752dedd
+      version: 1-82.0.1.module+el8.10.0+90756+b6fd2933
+      hash: a2b716ae0219c66fc09571b92412e976453b4f5c
     - name: container-selinux
-      version: 2.229.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 40c3e7d6222d2220826abed419568e60f85f4604
+      version: 2.229.0-2.module+el8.10.0+90756+b6fd2933
+      hash: a26beb80fae8bc195c7d40f501aea570eed47c56
     - name: coreutils
-      version: 8.30-15.0.1.el8
-      hash: 102f3929c6f47b9f4a525af70f1786dff55cf860
+      version: 8.30-16.0.1.el8_10
+      hash: 6fca7240f027057c9de10765549719ce1da1aa15
     - name: coreutils-common
-      version: 8.30-15.0.1.el8
-      hash: e008db9e0a21d52b6fcd6d92b245e4d9e78e5c9b
+      version: 8.30-16.0.1.el8_10
+      hash: 659ca83108bbb582713b2bb4ac410bc8db5c0642
     - name: cpio
       version: 2.12-11.el8
       hash: aacdaabc96225772435ee869a68b895fdbd68d3e
@@ -4262,8 +4265,8 @@ os:
       version: 1.30.1-1.el8
       hash: 9b6745f9b2e0f4c580b3bb4768990ad48c8c5ada
     - name: criu
-      version: 3.18-5.module+el8.10.0+90704+e5ea1250
-      hash: 89a0e08f5dba03fbafb2ccbfe3525d73e45e6699
+      version: 3.18-5.module+el8.10.0+90756+b6fd2933
+      hash: 1394add8fbd1a49b96587c42a94473fb303079b1
     - name: crypto-policies
       version: 20230731-1.git3177e06.el8
       hash: 040329ad382ec2fbadc0cbf95d0ad6c4ab78233c
@@ -4274,8 +4277,8 @@ os:
       version: 2.3.7-7.el8
       hash: 7ef15bc53560b4e1964013ebce170778eaf05cfa
     - name: curl
-      version: 7.61.1-34.el8_10.8
-      hash: e78ed1dc7bae0b2f9d55d36b36b1688139bcb05e
+      version: 7.61.1-34.el8_10.9
+      hash: 402ac8f715c0b231f3a73e39010ad4d2ce374f66
     - name: cyrus-sasl-lib
       version: 2.1.27-6.el8_5
       hash: bff5133a48a1a70fda2ec757a382ec234fe675f2
@@ -4325,11 +4328,11 @@ os:
       version: 4.1-6.el8
       hash: 4f486d014dfec13cec583225dc3df287dd19ce21
     - name: dracut
-      version: 049-237.git20250603.0.1.el8_10
-      hash: eb86b553fb0d79dc4238bca2553603c602e65ec8
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 8973d93a8c74944345543ba2acf19f2928917747
     - name: dracut-network
-      version: 049-237.git20250603.0.1.el8_10
-      hash: ded16d481ca932131e4d328cf01526cb95ff3f92
+      version: 049-239.git20251127.0.1.el8_10
+      hash: 07dd789df5f0c83374fcdacbd58485f413bce82c
     - name: e2fsprogs
       version: 1.46.2-2.el8
       hash: 1ca3d172548d4214fca07398d1920a0ef0aaea12
@@ -4376,8 +4379,8 @@ os:
       version: 3.8-6.el8
       hash: 8b9d6e94a49c828a7cc62110e23e8387b0d3bb48
     - name: findutils
-      version: 4.6.0-23.el8_10
-      hash: 1e24310943b414a0903b4869e81bbd81737814e0
+      version: 4.6.0-24.el8_10
+      hash: 2205950ceb70c1fd5dd39bc43f4783b264d38890
     - name: flannel-cni-plugin
       version: 1.9.0-1.el8
       hash: fa76fe1469ddc6727be146fd72c8052e77955af9
@@ -4403,8 +4406,8 @@ os:
       version: 2.9.7-19.0.1.el8
       hash: e0852225d5ae346b65c27219fb6f4bbf8454f102
     - name: fuse-overlayfs
-      version: 1.13-1.module+el8.10.0+90704+e5ea1250
-      hash: a056ba793efcb9e607c2cd0f8ceede732938b5d8
+      version: 1.13-1.module+el8.10.0+90756+b6fd2933
+      hash: 8db12c3f71d7d91d1fac87e567348f3ecee58548
     - name: fwupd
       version: 1.7.8-2.0.1.el8
       hash: 99a7b567db105146b8f7f7ee016e884c6a5a5eed
@@ -4553,11 +4556,11 @@ os:
       version: 1.9.2-1.el8
       hash: 3dbbd0695f014615e313bcfa4cf42841cd064bb9
     - name: iscsi-initiator-utils
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: 4b0561082767b921d9566624246a0e083b5030e5
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 3a49bc8185daec206265ea34f00a8c8c08e7c747
     - name: iscsi-initiator-utils-iscsiuio
-      version: 6.2.1.4-8.git095f59c.0.3.el8
-      hash: ff55508fcaacc826093768cf1e028851dc66ed2e
+      version: 6.2.1.4-9.git095f59c.0.1.el8_10
+      hash: 2b4b5359d938a45f4dda8e76fa2634829d3d0bd0
     - name: isns-utils-libs
       version: 0.99-1.el8
       hash: 9f9acb12c03568a312b8dd370858e91b23eaeb01
@@ -4589,14 +4592,14 @@ os:
       version: 2.1.5-11.el8_10
       hash: 5400aeaf1e576e9fb06198645bbc6f553fb74d67
     - name: kernel-uek-container
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: b285d321b8f8aed0bb6759943e4a73c30920f5e0
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 3e8503a4108d8fc250a4ab4417bb4dd31e231990
     - name: kernel-uek-core
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: d9d9ab0c81f326c184114f4696d86f2de40ad098
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: 19b6d59361cf1843db49ef12073ea118c9cc993d
     - name: kernel-uek-modules
-      version: 5.15.0-315.196.5.1.el8uek
-      hash: fb444f21f0517edd1b5279f67a2f07f555b8ca79
+      version: 5.15.0-315.196.5.2.el8uek
+      hash: ee4445ad0b73f1c4f292752435fb123518aace46
     - name: keyutils
       version: 1.5.10-9.0.1.el8
       hash: 2ee69624fc08a8d724049b6520050d5b4b2ab5af
@@ -4624,9 +4627,6 @@ os:
     - name: kubelet
       version: 1.30.14-2.el8
       hash: 7960bad1bd889796074a0d300e8e49a1520e1c87
-    - name: kubernetes-cni
-      version: 1.2.3-2.el8
-      hash: 7ee2637c15b8cdf0a667694b7bac8508453ed864
     - name: kubernetes-imgs
       version: 1.30.14-2.el8
       hash: ae94d98db968cc0411d24e1e8adc01d55b3a71c5
@@ -4655,8 +4655,8 @@ os:
       version: 0.1.1-40.el8
       hash: d0ad8197e560bf84e90e970b42e3d07415e686f8
     - name: libblkid
-      version: 2.32.1-46.0.1.el8
-      hash: d664f78c5e772b3a09ae9ead566b0824966f009a
+      version: 2.32.1-47.0.1.el8_10
+      hash: b7d813bc3ababed0a93d0eb3942fb71a85125481
     - name: libblockdev
       version: 2.28-7.0.1.el8_10
       hash: eec4eba51db88b673b834bebfd87f23f45d8582d
@@ -4703,8 +4703,8 @@ os:
       version: 0.6.12-4.el8_2.1
       hash: d97c04798cd504df6acbe28f1ced1b19c6231616
     - name: libcurl
-      version: 7.61.1-34.el8_10.8
-      hash: 384483ee77121105c4e7e71ff88018045931db3d
+      version: 7.61.1-34.el8_10.9
+      hash: c8401f0d40b0830411ebf9945ae350c41483d9f4
     - name: libdb
       version: 5.3.28-42.0.1.el8_4
       hash: 93d98ec64ffb968a5d16e8d902b4541ec394be28
@@ -4721,8 +4721,8 @@ os:
       version: 2.1.8-5.el8
       hash: c4ade184aa910e3c8bbecc1bdf0789ce7cdc4537
     - name: libfdisk
-      version: 2.32.1-46.0.1.el8
-      hash: 2ea6a079326347fa81b3bdaede423325fd1c25d8
+      version: 2.32.1-47.0.1.el8_10
+      hash: 2615d596107cf1446c2edbc2c94bf908a89e9244
     - name: libfdt
       version: 1.6.0-1.el8
       hash: 9eb386e4c0dd37dd4efd7cc35e6f6f26be945d26
@@ -4781,8 +4781,8 @@ os:
       version: 2.13.0-1.el8
       hash: 6a464eb0e300d43eae3248f59ab046ff65bd8ebc
     - name: libmount
-      version: 2.32.1-46.0.1.el8
-      hash: f9778b81fce245a6e4e6656f06cf9341ffe44260
+      version: 2.32.1-47.0.1.el8_10
+      hash: 03fdcd205ab13525a40aa4c6d68f26ee79a340d8
     - name: libndp
       version: 1.7-7.el8_10
       hash: 50d01548c587bfcded90ef1bd0c3e2c2e1b29fce
@@ -4829,8 +4829,8 @@ os:
       version: 1.6.1-1.el8
       hash: 1f31c845c59e0098b2619726ba4758c87acd4582
     - name: libpng
-      version: 1.6.34-5.el8
-      hash: 69b136deae35c2d67d2f5db3b6f01f47f9d01fd9
+      version: 1.6.34-9.el8_10
+      hash: 57b01a5c3a1efe21dcee7073ea54cd5be0a341c3
     - name: libpsl
       version: 0.20.2-6.el8
       hash: d12803cf25aa3dfa33e4a17277075ee6fbc5c952
@@ -4880,11 +4880,11 @@ os:
       version: 2.11-5.el8
       hash: 7abfe541f9bcc93d10d9a38212643c69e6b8091c
     - name: libslirp
-      version: 4.4.0-2.module+el8.10.0+90704+e5ea1250
-      hash: 7676baded6355fd56122282a12c8ed9d2d9744f3
+      version: 4.4.0-2.module+el8.10.0+90756+b6fd2933
+      hash: b17a1a8cda0962f1ec9eaca1f892b0045cb4cad5
     - name: libsmartcols
-      version: 2.32.1-46.0.1.el8
-      hash: 81721c0268490176e9f400cbdadf7ead85defac1
+      version: 2.32.1-47.0.1.el8_10
+      hash: 380261158b9082c052c9a704ef1b12b48c951c9e
     - name: libsmbios
       version: 2.4.1-2.el8
       hash: 72e44867fb03da9d639ac7ed6c448c01217111ff
@@ -4925,8 +4925,8 @@ os:
       version: 1.1.6-14.el8
       hash: 60e6ee9336839a89ae7500f6deb1b089aab57398
     - name: libuuid
-      version: 2.32.1-46.0.1.el8
-      hash: 2f7a5f1102ba0a650b9e91acbdab9a0d52228594
+      version: 2.32.1-47.0.1.el8_10
+      hash: a8dbbd660ff0969b046f53961662a225473af799
     - name: libverto
       version: 0.3.2-2.el8
       hash: a2934c777a7b907c2d14c935c67a0052377a6a99
@@ -5012,11 +5012,11 @@ os:
       version: 6.1-10.20180224.el8
       hash: 2ea59bcd42754bda24f0af14e7b6a4bb1646a62a
     - name: net-snmp-agent-libs
-      version: 5.8-31.0.1.el8_10
-      hash: 0e9a66ded20c1955d1f587cb192f2639b1e07261
+      version: 5.8-32.0.1.el8_10
+      hash: f6e5fa3081262ece7f1281faaf1369681c7fdd05
     - name: net-snmp-libs
-      version: 5.8-31.0.1.el8_10
-      hash: a2218a198ea590fd378a55760df0053d964d297b
+      version: 5.8-32.0.1.el8_10
+      hash: ba9da51b5442df83fd45807aaac77c8581fa16cd
     - name: nettle
       version: 3.4.1-7.el8
       hash: 93dae1e6b253287e9669cf5e24d9a4268847ad36
@@ -5081,20 +5081,20 @@ os:
       version: 2.4.46-21.el8_10
       hash: 009bcb3f60e76ec3478f2417ffcf19bec3844d29
     - name: openssh
-      version: 8.0p1-26.0.1.el8_10
-      hash: 28ac98bdde62644cf8880dbbcd14420095febb70
+      version: 8.0p1-27.0.1.el8_10
+      hash: bda6a580ead171d344d1cb56cbb3ce8d912e1558
     - name: openssh-clients
-      version: 8.0p1-26.0.1.el8_10
-      hash: 10e307688de6508f884a925bea282c779e317284
+      version: 8.0p1-27.0.1.el8_10
+      hash: f9d907a65ce41399217334b599e9a728e5c23a1e
     - name: openssh-server
-      version: 8.0p1-26.0.1.el8_10
-      hash: 77a885740b836baed1560493c582e4b8b63b0f26
+      version: 8.0p1-27.0.1.el8_10
+      hash: 038a7db0e748eedca0b7242ed798b2a2c8007f1d
     - name: openssl
-      version: 1.1.1k-14.el8_6
-      hash: 20cd3532d72908821a2aae7bfca631039ddc563a
+      version: 1.1.1k-14.el8_10
+      hash: 536aa66beda6496339f3ce2389daee62ef425283
     - name: openssl-libs
-      version: 1.1.1k-14.el8_6
-      hash: 4f627f066a74e71966ffcb3d60bd1bfe1cd1eb12
+      version: 1.1.1k-14.el8_10
+      hash: d4dffb0c2dc31a64f161c12150848542c05f234f
     - name: openssl-pkcs11
       version: 0.4.10-3.el8
       hash: 06b546533bebb603a7bf88633880658d63f77583
@@ -5117,8 +5117,8 @@ os:
       version: 0.23.22-2.el8
       hash: ec2fc66cedd554652a8ac0c90cbed1f052b91095
     - name: pam
-      version: 1.3.1-38.0.1.el8_10
-      hash: bb93fd3b7d850f204b5de71adc9cdac78f2299f3
+      version: 1.3.1-39.0.1.el8_10
+      hash: 8862890235a702348ff0ee87f737db266a5c588a
     - name: parted
       version: 3.2-39.0.2.el8
       hash: 6231c23cc7a7fa439d8321f6b3b88d762868019d
@@ -5273,17 +5273,17 @@ os:
       version: 39.2.0-9.el8_10
       hash: c3823c1bd15423897ab90d349347ce7c82cffd55
     - name: podman
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: cfd0602826b674c18c4c075bef84021bf7d385f1
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: b6333e653ec122b5bf80c6e95bc2c4b246b7a421
     - name: podman-catatonit
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 670c199b3de3e80cc51328c7cb1efd0fc4936058
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 79d39af61785d5f33ae650dbc39435cceb2b54e0
     - name: podman-gvproxy
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 7c149d712e3ab14f858582b11919647ae9721603
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: ebeb780478db1d580555555c11ed91aa40c7e27b
     - name: podman-plugins
-      version: 4.9.4-23.0.1.module+el8.10.0+90704+e5ea1250
-      hash: 723242b3394f2c6e91cbfadfcfbe31b0c4141c08
+      version: 4.9.4-26.0.1.module+el8.10.0+90756+b6fd2933
+      hash: 2467c95c1f89c8d7500017094c465349974c866e
     - name: policycoreutils
       version: 2.9-26.0.1.el8_10
       hash: 68ca7657a1392b41573f4392fe2576c089e8022a
@@ -5423,8 +5423,8 @@ os:
       version: 4.14.3-32.0.1.el8_10
       hash: c1bb1eeeb6d549e0c2a30b1a8ad3e45d494a4fef
     - name: runc
-      version: 1.2.5-2.module+el8.10.0+90704+e5ea1250
-      hash: 308c8c5b1c24575f9926f788acc5a6b42ff5fdf3
+      version: 1.2.9-2.module+el8.10.0+90756+b6fd2933
+      hash: 67e363b99bf85755be4336303482099c162c5e70
     - name: seabios-bin
       version: 1.16.0-4.module+el8.10.0+90665+904479bd
       hash: 49235065e7c72b78b495aa2e8fb2b13f57c999fe
@@ -5447,11 +5447,11 @@ os:
       version: 0.20170427git-3.module+el8.10.0+90665+904479bd
       hash: 4888561850eaecf73b62c0bbe81cc3cab6066913
     - name: shadow-utils
-      version: 4.6-22.el8
-      hash: 568ff4fe47b1a65d25cc8c912c46b98fea1da7d1
+      version: 4.6-23.el8_10
+      hash: e61db07ab1db39b8549d9f581829b65194769d7e
     - name: shadow-utils-subid
-      version: 4.6-22.el8
-      hash: b61d3913a565f0892946ef6b7aad7ffeb15b3f25
+      version: 4.6-23.el8_10
+      hash: 0b74d2de1f032c5338d77cbdad8e5755ea79f6da
     - name: shared-mime-info
       version: 1.9-4.el8
       hash: 4c5005e91369f0691c72c3ce098fe69955f1c7ae
@@ -5459,11 +5459,11 @@ os:
       version: 15.8-4.0.3.el8_10
       hash: 5574f83134b24ab4635feb961bdc26ca99beb1b8
     - name: skopeo
-      version: 1.14.5-4.module+el8.10.0+90704+e5ea1250
-      hash: 65d9de317c17b7c5024c37c0c761e65ca5859bfd
+      version: 1.14.5-5.module+el8.10.0+90756+b6fd2933
+      hash: 6feb0cb2975fed4184d018d0bcf8290c6e0d9b26
     - name: slirp4netns
-      version: 1.2.3-1.module+el8.10.0+90704+e5ea1250
-      hash: f61af965552c9b8eb9b26ef20d84969531f5a0ba
+      version: 1.2.3-1.module+el8.10.0+90756+b6fd2933
+      hash: 081a285d4288f306dcbbaca69bc6da80f97d0b05
     - name: snappy
       version: 1.1.8-3.el8
       hash: 0b7eb0df322e1ed39a631a57265b4a37c7be0c00
@@ -5474,23 +5474,23 @@ os:
       version: 3.26.0-20.el8_10
       hash: 39c9e11b5605c2db65d02234ab50a23b12904f30
     - name: sudo
-      version: 1.9.5p2-1.0.1.el8_10.2
-      hash: 1ffcf56ddbaa5b230189d322dcc42c580a70a8dc
+      version: 1.9.5p2-1.0.1.el8_10.3
+      hash: 64dd42e30d42f649f60fe18dd76c2d53b1e60bfb
     - name: systemd
-      version: 239-82.0.7.el8_10.8
-      hash: 3146165125b7848c5913ceb15e33eea08425c998
+      version: 239-82.0.8.el8_10.8
+      hash: 5ec6d58b76bfa051a33059684a5fa884d8e6dbc9
     - name: systemd-container
-      version: 239-82.0.7.el8_10.8
-      hash: 909567e3a3f1e66f8c97d74a7cb0e39ae1251a97
+      version: 239-82.0.8.el8_10.8
+      hash: 8d57dcaad50c5bc1ac3196ba5b14998c194ca27f
     - name: systemd-libs
-      version: 239-82.0.7.el8_10.8
-      hash: 595b226446f332f3a1369fe2a86f98b2e8bf38cb
+      version: 239-82.0.8.el8_10.8
+      hash: a283ef4cd990995a1138b7b2326a8b13bca358b6
     - name: systemd-pam
-      version: 239-82.0.7.el8_10.8
-      hash: 66ee7967e635855aa7aa59d678eef6062e94d7f7
+      version: 239-82.0.8.el8_10.8
+      hash: 0ac40627914b1d5b45a09ff343c12440362608c9
     - name: systemd-udev
-      version: 239-82.0.7.el8_10.8
-      hash: 1971e3889d039bff8baffc3e2a2ed337589e5259
+      version: 239-82.0.8.el8_10.8
+      hash: cc6bb997a2e3654aa46af0706618911422eadce8
     - name: tar
       version: 1.30-11.el8_10
       hash: 4456ddfc8b5ad0e02fd071689bd46f7a0051e8a4
@@ -5507,8 +5507,8 @@ os:
       version: 0.3.15-2.el8
       hash: 178478462a1ced9ef90beb443d9688ee4176fd6c
     - name: tzdata
-      version: 2025b-1.0.1.el8
-      hash: 02e72e74654bde97ca92508045f21be483da0fea
+      version: 2025c-1.0.1.el8
+      hash: 0f26f3f34c8e8a7b36309d5f69de37438e27ddb5
     - name: udisks2
       version: 2.9.0-16.el8_10.1
       hash: baf7b91879596382c7001064fbefe6d9d56d9873
@@ -5516,8 +5516,8 @@ os:
       version: 0.10.1-4.el8
       hash: 2e9f21960fb47cf9a0dcc099c1a31118e65dc966
     - name: util-linux
-      version: 2.32.1-46.0.1.el8
-      hash: b6d3fb0410729c31feb01a7945b507a6a7605e20
+      version: 2.32.1-47.0.1.el8_10
+      hash: 76021615e0a10f8f45a6bba07f338f665ea2dd4d
     - name: vim-minimal
       version: 8.0.1763-21.0.1.el8_10
       hash: 4e59136e2a7429ce4a97373be02bc42da1520e15
@@ -5995,7 +5995,7 @@ catalog:
     - image: "container-registry.oracle.com/olcne/fluent-operator:v3.4.0"
       sha: "sha256:559ed4afac03c1d60a8f91aff01a6b8f8fb1dcde747761d3b0512f8b149babab"
     - image: "container-registry.oracle.com/os/oraclelinux:8"
-      sha: "sha256:74a6eb73d28c65d209fa27fbcddab383532e898c34447f6a12ddf8731541eae4"
+      sha: "sha256:0fcc352fc576e00d4360b9a094b1b6f5af9e43a1872c4a659888edba9dd9445c"
   - version: 3.2.0
     kubernetes:
       - 1.32
@@ -6008,7 +6008,7 @@ catalog:
     - image: "container-registry.oracle.com/olcne/fluent-operator:v3.2.0"
       sha: "sha256:5b69e4970fabb828b9612ab302a9643fd9c55d28502a7e57b7cc3d565f99389e"
     - image: "container-registry.oracle.com/os/oraclelinux:8"
-      sha: "sha256:74a6eb73d28c65d209fa27fbcddab383532e898c34447f6a12ddf8731541eae4"
+      sha: "sha256:0fcc352fc576e00d4360b9a094b1b6f5af9e43a1872c4a659888edba9dd9445c"
   grafana:
   - version: 10.2.6
     kubernetes:
@@ -6779,7 +6779,7 @@ catalog:
       - 1.26
     images:
     - image: "container-registry.oracle.com/os/oraclelinux:8"
-      sha: "sha256:74a6eb73d28c65d209fa27fbcddab383532e898c34447f6a12ddf8731541eae4"
+      sha: "sha256:0fcc352fc576e00d4360b9a094b1b6f5af9e43a1872c4a659888edba9dd9445c"
   olvm-capi:
   - version: 1.0.0
     kubernetes:
@@ -6803,7 +6803,7 @@ catalog:
     - image: "container-registry.oracle.com/olcne/opensearch:2.15.0"
       sha: "sha256:6a1f8e257a15dbd308f8f206f6045887dcbcc7856e4fc4d9a905139eb1e4eb18"
     - image: "container-registry.oracle.com/os/oraclelinux:8"
-      sha: "sha256:74a6eb73d28c65d209fa27fbcddab383532e898c34447f6a12ddf8731541eae4"
+      sha: "sha256:0fcc352fc576e00d4360b9a094b1b6f5af9e43a1872c4a659888edba9dd9445c"
   opensearch-dashboards:
   - version: 2.15.0
     kubernetes:
